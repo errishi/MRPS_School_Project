@@ -23,6 +23,24 @@
     background-color: #ffffff;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Quicksand", sans-serif;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: var(--primary-text-color);
+    transition: all 0.4s ease-in-out;
+}
+
 /* -------------------Header section----------------------- */
 
 .header-top-shape img{
@@ -94,7 +112,7 @@ nav ul li a:hover{
     transition: all 0.4s ease-in-out;
 }
 
-.header-button{
+.header-button, .footer-button{
     background-color: var(--hover-text-color);
     font-weight: 700;
     padding: 22px 40px;
@@ -111,6 +129,123 @@ nav ul li a:hover{
     height: 15px;
 }
 
-.header-button a{
+.header-button a , .footer-button a{
     color: var(--white);
+}
+
+
+/* -------------------------------------Body Container-------------------------- */
+
+.hero-banner{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/asset\ 60.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.feature-section{
+    width: 100%;
+    height: 700px;
+}
+
+/* ------------------------------Footer section------------------------------------ */
+
+.footer-container{
+    width: 100%;
+    height: 640px;
+    background-color: var(--background-color-2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-top: -3em;
+    align-items: center;
+}
+
+.sub-footer img{
+    width: 100%;
+    height: 6.2em;
+    object-fit: cover;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -97rem;
+}
+
+.logo-footer{
+    width: 20em;
+}
+
+.foot-content{
+    display: flex;
+    flex-wrap:wrap;
+    width: 370px;
+    height: 110px;
+}
+
+.foot-logo, .quick-links h3, .contact-us h3{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #F39F5F 4.85%, rgba(201, 203, 223, 0) 96.39%);
+    border-bottom: 2px solid transparent;
+    border-image-slice: 2;
+    display: inline-block;
+}
+
+.quick-links, .contact-us, .logo-footer{
+    color: var(--primary-text-color);
+    margin-top: 30px;
+}
+
+.quick-links h3, .contact-us h3{
+    position: absolute;
+    bottom: -46em;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.quick-links{
+    display: flex;
+    width: 35%;
+    margin-top: 9em;
+    margin-right: -40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.quick-links li a:hover{
+    color: var(--hover-text-color);
+    transition: all 0.4s ease-in-out;
+    margin-left: 5px;
+}
+
+.second-footer-column ul li, .single-footer-column ul li{
+    margin-bottom: 15px;
+}
+
+.second-footer-column{
+    width: 50%;
+}
+
+.contact-info{
+    margin-top: 2em;
+}
+
+.contact-info li{
+    margin-bottom: 20px;
+    width: 269px;
+}
+
+.footer-button{
+    width: 7em;
 }
