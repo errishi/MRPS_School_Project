@@ -14,6 +14,7 @@
     --background-color-1: #70a6b1;
     --background-color-2: #f4eee5;
     --footer-background-color: #5c707e;
+    --white: #fff;
 }
 
 .main-container{
@@ -34,6 +35,29 @@
 
 img svg{
     vertical-align: middle;
+}
+
+.connect-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 52px 0 52px;
+    padding: 15px 0;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    color: var(--white);
+}
+
+.location{
+    display: flex;
+    gap: 40px;
+}
+
+.social-media{
+    gap: 40px;
+    position: relative;
+    left: 382px;
 }
 
 nav{
