@@ -1,0 +1,116 @@
+@media (max-width: 780px) {
+    .main-container {
+        width: 143vw;
+    }
+
+    nav {
+        margin-top: 2.3em;
+    }
+
+    nav ul,
+    .header-button {
+        visibility: hidden;
+    }
+
+    nav img {
+        margin-left: 6em;
+    }
+
+    .header-top-shape {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .quick-links{
+        margin-top: 12em;
+        width: 45%;
+    }
+
+    .quick-links h3 {
+        bottom: -44em;
+        width: 6em;
+    }
+
+    .contact-us h3 {
+        bottom: 6em;
+        left: -9em;
+    }
+
+    .contact-us {
+        position: absolute;
+        bottom: -103em;
+        display: flex;
+        align-items: center;
+        gap: 20%;
+        left: 23em;
+    }
+
+    .contact-info li{
+        font-size: 1.2em;
+    }
+    
+    .contact-info li a{
+        font-size: 1.05em;
+    }
+    
+    .list-area li a{
+        font-size: 1.06em;
+    }
+
+    .footer {
+        margin-top: -21em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-container {
+        height: 941px;
+    }
+
+    .footer-shape {
+        width: 143%;
+        bottom: -114rem;
+    }
+
+    .footer-button {
+        width: 16em;
+        text-align: center;
+    }
+
+    .foot-content{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 430px) {
+    .main-container {
+        width: 187vw;
+        height: 171vh;
+        overflow-x: hidden;
+    }
+
+    .contact-us{
+        position: absolute;
+        left: 23em;
+        flex-direction: column;
+        top: 147em;
+    }
+
+    .contact-us h3 {
+        bottom: 6em;
+    }
+
+    .footer{
+        flex-direction: column;
+        margin-top: -40em;
+    }
+
+    .footer-container {
+        height: 400vh;
+    }
+
+    .footer-shape {
+        width: 187%;
+        bottom: -179rem;
+    }
+}
