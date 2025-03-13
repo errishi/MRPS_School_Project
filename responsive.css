@@ -1,3 +1,20 @@
+@media (min-width: 1280px) {
+    .main-container{
+        width: 150%;
+    }
+    
+    .footer-shape img{
+        width: max-content;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-container{
+        width: 100%;
+    }
+    
+}
+
 @media (max-width: 780px) {
     .main-container {
         width: 143vw;
@@ -145,7 +162,16 @@
 
     .footer-shape {
         width: 187%;
-        bottom: -2rem; 
+        bottom: 2rem;
+    }
+
+    .copyright, .condition li a{
+        font-size: 1.2em;
+    }
+
+    .footer-shape img{
+        height: 10em;
+        width: auto;
     }
 
     .footer-button{
@@ -185,5 +211,10 @@
 
     .sub-footer {
         position: relative;
+    }
+
+    .sub-footer-box{
+        bottom: 8px;
+        flex-wrap: wrap;
     }
 }

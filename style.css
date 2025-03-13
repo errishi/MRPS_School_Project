@@ -188,7 +188,7 @@ nav ul li a:hover {
     width: 100%;
     height: 6.2em;
     object-fit: cover;
-    background-image: url(/assets/asset\ 58.png);
+    /* background-image: url(/assets/asset\ 58.png); */
     background-repeat: no-repeat;
     box-sizing: border-box;
     position: absolute;
