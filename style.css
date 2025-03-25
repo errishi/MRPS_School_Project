@@ -23,6 +23,23 @@
     background-color: #ffffff;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--hover-text-color);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--hover-text-color);
+    border-radius: 10px;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -153,7 +170,7 @@ nav ul li a:hover {
     background-position: center;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -282,17 +299,18 @@ nav ul li a:hover {
     width: 7em;
 }
 
-.condition{
+.condition {
     display: flex;
     gap: 2em;
 }
 
-.condition a:hover{
+.condition a:hover {
     color: var(--hover-text-color);
     border-bottom: 1px solid var(--hover-text-color);
     transition: all 0.2s ease-in-out;
 }
 
-.copyright, .condition{
+.copyright,
+.condition {
     margin-top: 2em;
 }
