@@ -204,6 +204,19 @@ nav ul li a:hover {
     font-family: "Source Sans 3", sans-serif;
     line-height: 28px;
     color: #5c707e;
+    margin: 20px 0 50px 0;
+}
+
+.sticker1 img{
+    position: relative;
+    bottom: 60px;
+    left: 112px;
+}
+
+.sticker2 img{
+    position: relative;
+    bottom: 64px;
+    left: 444px;
 }
 
 .image, .text{
