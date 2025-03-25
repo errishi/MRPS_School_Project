@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 .hero-banner {
     width: 100%;
-    height: 100%;
+    height: 801px;
     background-image: url(/assets/asset\ 60.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,11 +174,45 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 96px 52px 30px 52px;
 }
 
 .feature-section {
     width: 100%;
     height: 700px;
+}
+
+.welcome_text{
+    font-size: 18px;
+    font-family: "Pangolin";
+    color: var(--hover-text-color);
+}
+
+.school_name, .class-digit{
+    font-size: 70px;
+    line-height: 78.4px;
+    font-family: 'Quicksand, sans-serif';
+    color: var(--primary-text-color);
+}
+
+.class-digit{
+    color: var(--hover-text-color);
+}
+
+.affiliating_agency{
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 28px;
+    color: #5c707e;
+}
+
+.image, .text{
+    width: 50%;
+    height: auto;
+}
+
+.image img{
+    margin-top: 1.6em;
 }
 
 /* ------------------------------Footer section------------------------------------ */
