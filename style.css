@@ -187,19 +187,22 @@ nav ul li a:hover {
 .footer-shape {
     width: 100%;
     height: 6.2em;
-    object-fit: cover;
-    /* background-image: url(/assets/asset\ 58.png); */
-    background-repeat: no-repeat;
-    box-sizing: border-box;
     position: absolute;
     bottom: -99rem;
 }
 
 .sub-footer-box {
+    background-image: url(/assets/asset\ 58.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 5em;
+    position: absolute;
+    bottom: -95.6em;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    position: relative;
-    bottom: -10px;
+    justify-content: space-evenly;
+    align-items: center;
     color: var(--primary-text-color);
 }
 
@@ -288,4 +291,8 @@ nav ul li a:hover {
     color: var(--hover-text-color);
     border-bottom: 1px solid var(--hover-text-color);
     transition: all 0.2s ease-in-out;
+}
+
+.copyright, .condition{
+    margin-top: 2em;
 }

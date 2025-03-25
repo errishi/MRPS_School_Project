@@ -4,15 +4,18 @@
     }
     
     .footer-shape img{
-        width: max-content;
+        width: 100%;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
     .main-container{
         width: 100%;
     }
     
+    .footer-shape img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 780px) {
