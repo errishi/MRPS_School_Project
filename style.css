@@ -393,7 +393,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: 5em;
     position: absolute;
-    bottom: -95.6em;
+    bottom: -108em;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -434,7 +434,7 @@ nav ul li a:hover {
 .quick-links h3,
 .contact-us h3 {
     position: absolute;
-    bottom: -46em;
+    bottom: -53em;
     font-size: 24px;
     font-weight: bold;
     display: inline-block;
