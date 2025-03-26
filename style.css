@@ -177,24 +177,21 @@ nav ul li a:hover {
     padding: 96px 52px 30px 52px;
 }
 
-.feature-section {
-    width: 100%;
-    height: 700px;
-}
 
-.welcome_text{
+.welcome_text {
     font-size: 18px;
     font-family: "Pangolin";
     color: var(--hover-text-color);
     z-index: 9;
 }
 
-.text{
+.text {
     position: relative;
     top: -29em;
 }
 
-.school_name, .class-digit{
+.school_name,
+.class-digit {
     font-size: 70px;
     line-height: 78.4px;
     font-family: 'Quicksand, sans-serif';
@@ -202,11 +199,11 @@ nav ul li a:hover {
     z-index: 9;
 }
 
-.class-digit{
+.class-digit {
     color: var(--hover-text-color);
 }
 
-.affiliating_agency{
+.affiliating_agency {
     font-size: 20px;
     font-family: "Source Sans 3", sans-serif;
     line-height: 28px;
@@ -215,19 +212,20 @@ nav ul li a:hover {
     z-index: 9;
 }
 
-.fadeInUp{
+.fadeInUp {
     visibility: visible;
     animation-delay: 0.3s;
     animation-name: fadeInUp;
 }
 
-@keyframes fadeInUp{
+@keyframes fadeInUp {
     0% {
         opacity: 0;
         -webkit-transform: translateY(20px);
         -ms-transform: translateY(20px);
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -236,25 +234,25 @@ nav ul li a:hover {
     }
 }
 
-.sticker1 img{
+.sticker1 img {
     position: relative;
     bottom: 60px;
     left: 112px;
 }
 
-.sticker2 img{
+.sticker2 img {
     position: relative;
     bottom: 64px;
     left: 444px;
 }
 
-.sticker3 img{
+.sticker3 img {
     position: absolute;
     top: 15em;
     left: -8em;
 }
 
-.sticker4 img{
+.sticker4 img {
     position: absolute;
     left: 25%;
     bottom: -20%;
@@ -271,49 +269,52 @@ nav ul li a:hover {
     animation-timing-function: linear;
 }
 
-@keyframes float-bob-y{
+@keyframes float-bob-y {
     0% {
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
+
     50% {
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
+
     100% {
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
     }
 }
 
-.sticker5 img{
+.sticker5 img {
     position: absolute;
     bottom: -25%;
     left: 80%;
     animation: rounded 5s linear infinite;
 }
 
-@keyframes rounded{
+@keyframes rounded {
     50% {
         transform: rotate(20deg);
     }
 }
 
-.image, .text{
+.image,
+.text {
     width: 50%;
     height: auto;
 }
 
-#boy-image{
+#boy-image {
     position: relative;
     z-index: 1;
 }
 
-.image img{
+.image img {
     margin-top: 1.6em;
 }
 
-.float-bob-x{
+.float-bob-x {
     -webkit-animation-name: float-bob-x;
     animation-name: float-bob-x;
     -webkit-animation-duration: 3s;
@@ -324,7 +325,7 @@ nav ul li a:hover {
     animation-timing-function: linear;
 }
 
-@keyframes float-bob-x{
+@keyframes float-bob-x {
     0% {
         -webkit-transform: translateX(30px);
         transform: translateX(30px);
@@ -341,7 +342,7 @@ nav ul li a:hover {
     }
 }
 
-.sticker6 img{
+.sticker6 img {
     position: relative;
     top: -39em;
     right: -25em;
@@ -349,14 +350,59 @@ nav ul li a:hover {
     animation: rounded 5s linear infinite;
 }
 
-.sticker7{
+.sticker7 {
     overflow: hidden;
 }
 
-.sticker7 img{
+.sticker7 img {
     position: relative;
     right: 0em;
     top: -43.7em;
+}
+
+.feature-section {
+    width: 100%;
+    height: 700px;
+}
+
+.feature-box {
+    width: 93%;
+    height: auto;
+    margin: 96px 52px 120px 52px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-text h3{
+    font-size: 1.4em;
+}
+
+.bg-1 {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cbse,
+.admission,
+.conveyance,
+.fee-structure {
+    width: 20em;
+    height: 30em;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: var(--footer-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center !important;
+    color: var(--primary-text-color);
 }
 
 /* ------------------------------Footer section------------------------------------ */
