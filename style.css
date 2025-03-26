@@ -186,6 +186,12 @@ nav ul li a:hover {
     font-size: 18px;
     font-family: "Pangolin";
     color: var(--hover-text-color);
+    z-index: 9;
+}
+
+.text{
+    position: relative;
+    top: -29em;
 }
 
 .school_name, .class-digit{
@@ -193,6 +199,7 @@ nav ul li a:hover {
     line-height: 78.4px;
     font-family: 'Quicksand, sans-serif';
     color: var(--primary-text-color);
+    z-index: 9;
 }
 
 .class-digit{
@@ -205,6 +212,28 @@ nav ul li a:hover {
     line-height: 28px;
     color: #5c707e;
     margin: 20px 0 50px 0;
+    z-index: 9;
+}
+
+.fadeInUp{
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 .sticker1 img{
@@ -219,13 +248,115 @@ nav ul li a:hover {
     left: 444px;
 }
 
+.sticker3 img{
+    position: absolute;
+    top: 15em;
+    left: -8em;
+}
+
+.sticker4 img{
+    position: absolute;
+    left: 25%;
+    bottom: -20%;
+}
+
+.float-bob-y {
+    -webkit-animation-name: float-bob-y;
+    animation-name: float-bob-y;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes float-bob-y{
+    0% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+}
+
+.sticker5 img{
+    position: absolute;
+    bottom: -25%;
+    left: 80%;
+    animation: rounded 5s linear infinite;
+}
+
+@keyframes rounded{
+    50% {
+        transform: rotate(20deg);
+    }
+}
+
 .image, .text{
     width: 50%;
     height: auto;
 }
 
+#boy-image{
+    position: relative;
+    z-index: 1;
+}
+
 .image img{
     margin-top: 1.6em;
+}
+
+.float-bob-x{
+    -webkit-animation-name: float-bob-x;
+    animation-name: float-bob-x;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@keyframes float-bob-x{
+    0% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+
+    50% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+}
+
+.sticker6 img{
+    position: relative;
+    top: -39em;
+    right: -25em;
+    z-index: 0;
+    animation: rounded 5s linear infinite;
+}
+
+.sticker7{
+    overflow: hidden;
+}
+
+.sticker7 img{
+    position: relative;
+    right: 0em;
+    top: -43.7em;
 }
 
 /* ------------------------------Footer section------------------------------------ */
