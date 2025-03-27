@@ -98,10 +98,20 @@ img svg {
     gap: 40px;
 }
 
+.address i, .e-mail i{
+    margin-right: 8px;
+}
+
 .social-media {
     gap: 40px;
     position: relative;
     left: 382px;
+}
+
+.social-media a i {
+    margin: 0 10px;
+    font-size: 0.99em;
+    color: var(--white);
 }
 
 nav {
@@ -547,6 +557,12 @@ nav ul li a:hover {
 .contact-info li {
     margin-bottom: 20px;
     width: 269px;
+}
+
+#icons{
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--hover-text-color);
 }
 
 .footer-button {
