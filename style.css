@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Macondo&family=Pangolin&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +44,8 @@
 
 body {
     overflow-x: hidden;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
 }
 
 h1,
@@ -188,13 +192,16 @@ nav ul li a:hover {
 .text {
     position: relative;
     top: -29em;
+    left: 2em;
+    z-index: 3;
 }
 
 .school_name,
 .class-digit {
     font-size: 70px;
     line-height: 78.4px;
-    font-family: 'Quicksand, sans-serif';
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
     color: var(--primary-text-color);
     z-index: 9;
 }
@@ -248,8 +255,9 @@ nav ul li a:hover {
 
 .sticker3 img {
     position: absolute;
-    top: 15em;
+    top: 20em;
     left: -8em;
+    z-index: -1;
 }
 
 .sticker4 img {
@@ -375,15 +383,37 @@ nav ul li a:hover {
     align-items: center;
 }
 
+#image-feature{
+    position: relative;
+    top: 1em;
+    mask-image: url('./assets/mask.svg');
+    -webkit-mask-image: url('./assets/mask.svg');
+}
+
 .feature-text h3{
     font-size: 1.4em;
 }
 
-.bg-1 {
+.bg, .bg-1, .bg-2, .bg-3, .bg-4 {
     position: absolute;
-    top: 34%;
-    left: 50%;
+    top: 77.4em;
     transform: translate(-50%, -50%);
+}
+
+.bg-1{
+    left: 15%;
+}
+
+.bg-2{
+    left: 38.5%;
+}
+
+.bg-3{
+    left: 62%;
+}
+
+.bg-4{
+    right: -4.5%;
 }
 
 .cbse,
