@@ -19,6 +19,10 @@
     --white: #fff;
 }
 
+a{
+    cursor: pointer;
+}
+
 .main-container {
     width: 100vw;
     height: 100vh;
@@ -211,22 +215,23 @@ nav ul li a:hover {
     left: 4em;
 }
 
-.explore-btn{
+.explore-btn {
     background-color: var(--hover-text-color);
 }
 
-.explore-btn:hover{
+.explore-btn:hover {
     background-color: var(--primary-text-color);
 }
 
-.button{
+.button {
     background-color: transparent;
     color: var(--background-color-1);
     border: 2px solid var(--background-color-1);
 
 }
 
-.button, .explore-btn {
+.button,
+.explore-btn {
     cursor: pointer;
     position: relative;
     padding: 10px 24px;
@@ -237,7 +242,8 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-.button::before, .explore-btn::before {
+.button::before,
+.explore-btn::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -251,7 +257,8 @@ nav ul li a:hover {
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.button:hover::before, .explore-btn:hover::before {
+.button:hover::before,
+.explore-btn:hover::before {
     scale: 3;
 }
 
@@ -265,6 +272,53 @@ nav ul li a:hover {
     scale: 1;
 }
 
+.read-btn {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: var(--hover-text-color);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    height: 2.4em;
+}
+
+.read-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    top: -0.6em;
+    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.read-btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.read-btn:hover span {
+    padding-right: 15px;
+}
+
+.read-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.read-btn:hover{
+    background-color: var(--primary-text-color);
+}
 
 /* -------------------------------------Body Container-------------------------- */
 
@@ -489,7 +543,7 @@ nav ul li a:hover {
 
 #image-feature {
     position: relative;
-    top: 1em;
+    top: 1.2em;
     mask-image: url('./assets/mask.svg');
     -webkit-mask-image: url('./assets/mask.svg');
 }
