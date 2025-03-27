@@ -1,4 +1,9 @@
 @media (min-width: 1280px) {
+    .sidebar_toggle{
+        visibility: hidden;
+        position: absolute;
+    }
+
     .main-container{
         width: 150%;
     }
@@ -9,6 +14,11 @@
 }
 
 @media (min-width: 1023px) {
+    .sidebar_toggle{
+        visibility: hidden;
+        position: absolute;
+    }
+
     .main-container{
         width: 100%;
     }

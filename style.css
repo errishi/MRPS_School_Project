@@ -98,7 +98,8 @@ img svg {
     gap: 40px;
 }
 
-.address i, .e-mail i{
+.address i,
+.e-mail i {
     margin-right: 8px;
 }
 
@@ -112,6 +113,11 @@ img svg {
     margin: 0 10px;
     font-size: 0.99em;
     color: var(--white);
+}
+
+.social-media a i:hover {
+    color: var(--hover-text-color);
+    transition: all 0.4s ease-in-out;
 }
 
 nav {
@@ -149,7 +155,9 @@ nav ul li a:hover {
 }
 
 .header-button,
-.footer-button {
+.footer-button,
+.explore-btn,
+.touch-btn {
     background-color: var(--hover-text-color);
     font-weight: 700;
     padding: 22px 40px;
@@ -164,11 +172,97 @@ nav ul li a:hover {
     text-transform: capitalize;
     vertical-align: middle;
     height: 15px;
+    visibility: visible;
+    animation-delay: 0.8s;
+    animation-name: fadeInUp;
 }
 
 .header-button a,
-.footer-button a {
+.footer-button a,
+.explore-btn a,
+.touch-btn a {
     color: var(--white);
+}
+
+.header-button a i,
+.footer-button a i,
+.explore-btn a i,
+.touch-btn a i,
+.button i {
+    margin-left: 0.8em;
+}
+
+.button-text,
+.header-button a i,
+.footer-button a i,
+.explore-btn a i,
+.touch-btn a i {
+    position: relative;
+    top: -0.4em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    position: relative;
+    top: -60em;
+    left: 4em;
+}
+
+.explore-btn{
+    background-color: var(--hover-text-color);
+}
+
+.explore-btn:hover{
+    background-color: var(--primary-text-color);
+}
+
+.button{
+    background-color: transparent;
+    color: var(--background-color-1);
+    border: 2px solid var(--background-color-1);
+
+}
+
+.button, .explore-btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    border-radius: 34px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.button::before, .explore-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--background-color-1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before, .explore-btn:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: var(--white);
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.button:active {
+    scale: 1;
 }
 
 
@@ -393,36 +487,40 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#image-feature{
+#image-feature {
     position: relative;
     top: 1em;
     mask-image: url('./assets/mask.svg');
     -webkit-mask-image: url('./assets/mask.svg');
 }
 
-.feature-text h3{
+.feature-text h3 {
     font-size: 1.4em;
 }
 
-.bg, .bg-1, .bg-2, .bg-3, .bg-4 {
+.bg,
+.bg-1,
+.bg-2,
+.bg-3,
+.bg-4 {
     position: absolute;
     top: 77.4em;
     transform: translate(-50%, -50%);
 }
 
-.bg-1{
+.bg-1 {
     left: 15%;
 }
 
-.bg-2{
+.bg-2 {
     left: 38.5%;
 }
 
-.bg-3{
+.bg-3 {
     left: 62%;
 }
 
-.bg-4{
+.bg-4 {
     right: -4.5%;
 }
 
@@ -546,6 +644,11 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+.second-footer-column ul li a i,
+.single-footer-column ul li a i {
+    margin-right: 5px;
+}
+
 .second-footer-column {
     width: 50%;
 }
@@ -559,7 +662,7 @@ nav ul li a:hover {
     width: 269px;
 }
 
-#icons{
+#icons {
     margin-right: 10px;
     font-size: 20px;
     color: var(--hover-text-color);
