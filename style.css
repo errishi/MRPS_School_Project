@@ -535,7 +535,6 @@ nav ul li a:hover {
     width: 93%;
     height: auto;
     margin: 96px 52px 120px 52px;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -618,9 +617,13 @@ nav ul li a:hover {
     width: 60%;
     height: auto;
     margin-left: -23em;
-    margin-top: -10em;
+    margin-top: -5em;
     position: relative;
     left: -2em;
+}
+
+.explore-btn-about{
+    width: 26%;
 }
 
 #about-title-size{
@@ -713,7 +716,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: 5em;
     position: absolute;
-    bottom: -145em;
+    bottom: -149em;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -754,7 +757,7 @@ nav ul li a:hover {
 .quick-links h3,
 .contact-us h3 {
     position: absolute;
-    bottom: -78em;
+    bottom: -81em;
     font-size: 24px;
     font-weight: bold;
     display: inline-block;
