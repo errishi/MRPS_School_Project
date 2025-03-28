@@ -609,7 +609,7 @@ nav ul li a:hover {
 }
 
 .about-img{
-    width: auto;
+    width: 100%;
     height: auto;
     margin-left: 2em;
 }
@@ -617,13 +617,35 @@ nav ul li a:hover {
 .about-content{
     width: 60%;
     height: auto;
-    margin-left: -10em;
-    margin-top: -17em;
+    margin-left: -23em;
+    margin-top: -10em;
+    position: relative;
+    left: -2em;
+}
+
+#about-title-size{
+    font-size: 50px;
+    line-height: normal;
 }
 
 .about-text{
-    color: var(--primary-text-color); 
-    width: 80%;   
+    color: var(--primary-text-color);
+    width: 100%;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.about-list{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.about-list li{
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    font-weight: 500;
+    color: var(--primary-text-color);
 }
 
 .sticker8 img{
