@@ -1,29 +1,29 @@
 @media (min-width: 1280px) {
-    .sidebar_toggle{
+    .sidebar_toggle {
         visibility: hidden;
         position: absolute;
     }
 
-    .main-container{
+    .main-container {
         width: 150%;
     }
-    
-    .footer-shape img{
+
+    .footer-shape img {
         width: 100%;
     }
 }
 
 @media (min-width: 1023px) {
-    .sidebar_toggle{
+    .sidebar_toggle {
         visibility: hidden;
         position: absolute;
     }
 
-    .main-container{
+    .main-container {
         width: 100%;
     }
-    
-    .footer-shape img{
+
+    .footer-shape img {
         width: 100%;
     }
 }
@@ -119,6 +119,55 @@
         overflow-x: hidden;
     }
 
+    .feature-box {
+        flex-wrap: wrap;
+        width: 82%;
+        justify-content: space-around;
+    }
+
+    .feature-section{
+        margin-top: -15em;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin-top: 42em;
+        margin-left: 4em;
+        width: auto;
+        height: auto;
+    }
+
+    .about-content{
+        top: -11em;
+        left: 10em;
+        width: 90%;
+    }
+
+    .about-img{
+        margin-left: 10em;
+    }
+
+    .bg, .bg-1, .bg-2, .bg-3, .bg-4 {
+        position: relative;
+        top: 25.4em;
+    }
+
+    .bg-1 {
+        left: 43%;
+    }
+
+    .bg-2 {
+        left: 40.5%;
+    }
+
+    .bg-3 {
+        left: 42%;
+    }
+
+    .bg-4 {
+        right: -41.5%;
+    }
+
     .contact-us {
         position: relative;
         left: 0em;
@@ -138,7 +187,9 @@
         margin-left: 10em;
     }
 
-    .list-area li a, .contact-info li, .button-text {
+    .list-area li a,
+    .contact-info li,
+    .button-text {
         font-size: 1.45em;
         width: fit-content;
     }
@@ -178,16 +229,17 @@
         bottom: 2rem;
     }
 
-    .copyright, .condition li a{
+    .copyright,
+    .condition li a {
         font-size: 1.2em;
     }
 
-    .footer-shape img{
+    .footer-shape img {
         height: 10em;
         width: auto;
     }
 
-    .footer-button{
+    .footer-button {
         margin-top: 3em;
         height: 2.1em;
     }
@@ -226,7 +278,7 @@
         position: relative;
     }
 
-    .sub-footer-box{
+    .sub-footer-box {
         bottom: 8px;
         flex-wrap: wrap;
     }
