@@ -819,6 +819,7 @@ nav ul li a:hover {
 .card1 > img{
     width: 275px;
     height: 209px;
+    border-radius: 10px;
 }
 
 .card2{
