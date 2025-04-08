@@ -626,6 +626,12 @@ nav ul li a:hover {
     left: -2em;
 }
 
+.about-sticker img{
+    bottom: 53%;
+    left: 65%;
+    z-index: -1;
+}
+
 .explore-btn-about{
     width: 26%;
 }
@@ -673,17 +679,25 @@ nav ul li a:hover {
 }
 
 .sticker10 img{
-    position: relative;
-    left: -35em;
+    position: absolute;
+    left: 24em;
     z-index: -1;
-    top: -8em;
+    top: 106em;
 }
 
 .sticker11 img{
-    position: relative;
-    left: -65em;
-    top: -10em;
+    position: absolute;
+    left: 5em;
+    top: 109em;
     z-index: -1;
+}
+
+.sticker12 img{
+    position: absolute;
+    top: 125em;
+    left: 5em;
+    border: 15px solid white;
+    border-radius: 50%;
 }
 
 /* ------------------------------Footer section------------------------------------ */
