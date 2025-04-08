@@ -320,6 +320,10 @@ nav ul li a:hover {
     background-color: var(--primary-text-color);
 }
 
+.sidebar_toggle i{
+    font-size: 2em;
+}
+
 /* -------------------------------------Body Container-------------------------- */
 
 .hero-banner {

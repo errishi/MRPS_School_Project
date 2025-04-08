@@ -147,6 +147,19 @@
         margin-left: 10em;
     }
 
+    .sidebar_toggle{
+        position: relative;
+        right: 6em;
+    }
+
+    /* .sticker8 img {
+        position: relative;
+        top: -39em;
+        left: -7em;
+        z-index: 1;
+        width: auto;
+    } */
+
     .bg, .bg-1, .bg-2, .bg-3, .bg-4 {
         position: relative;
         top: 25.4em;
