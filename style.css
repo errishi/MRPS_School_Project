@@ -621,7 +621,6 @@ nav ul li a:hover {
     width: 60%;
     height: auto;
     margin-left: -23em;
-    margin-top: -5em;
     position: relative;
     left: -2em;
 }
@@ -711,7 +710,7 @@ nav ul li a:hover {
     color: var(--white);
 }
 
-#digit>h4 {
+#digit > h4 {
     font-size: 20px;
     position: relative;
     top: 5em;
@@ -744,10 +743,11 @@ nav ul li a:hover {
     border-right: 1px dotted white;
 }
 
-.count-box>h2 {
+.count-box>h2, .wow-heading > h2 {
     font-size: 50px;
     line-height: 58px;
     letter-spacing: normal;
+    font-weight: 700;
 }
 
 .count-box>p {
@@ -759,6 +759,28 @@ nav ul li a:hover {
 .count-box>img {
     width: 60px;
     height: 60px;
+}
+
+/* -----------Our feature section------------------- */
+
+.ourFeature{
+    width: 1300px;
+    height: 1500px;
+    margin: 80px 52px 0 52px;
+    border: 3px solid red;
+}
+
+.wow-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+    flex-wrap: nowrap;
+}
+
+.wow-heading > h2{
+    color: var(--primary-text-color);
 }
 
 /* ------------------------------Footer section------------------------------------ */
@@ -796,7 +818,7 @@ nav ul li a:hover {
     box-sizing: border-box;
     height: 5em;
     position: absolute;
-    bottom: -197em;
+    bottom: -284em;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -837,7 +859,7 @@ nav ul li a:hover {
 .quick-links h3,
 .contact-us h3 {
     position: absolute;
-    bottom: -113em;
+    bottom: -170em;
     font-size: 24px;
     font-weight: bold;
     display: inline-block;
